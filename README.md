@@ -1,17 +1,15 @@
-# Spryker B2C Demo Shop
+# B2C Test Shop (Spryker Commerce OS)
 [![Build Status](https://github.com/spryker-shop/b2c-demo-shop/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/spryker-shop/b2c-demo-shop/actions?query=branch:master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spryker-shop/b2c-demo-shop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spryker-shop/b2c-demo-shop/?branch=master)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
 
 ## Description
 
-Spryker B2C Demo Shop is a collection of Spryker B2C-specific features. It suits most projects as a starting point of development and can be used to explore Spryker.
+B2C Test Shop. It was created using Spryker Commerce OS for passing the final exam in Innowise Group.
 
-## B2C Demo Shop quick start
+## Quick start
 
-This section describes how to get started with the B2C Demo Shop quickly.
-
-For detailed installation instructions, see [Installing Spryker with Docker](https://docs.spryker.com/docs/installing-spryker-with-docker) or [Installing with Development Virtual Machine](https://docs.spryker.com/docs/dev-getting-started#installing-spryker-with-development-virtual-machine).
+This section describes how to get started with the B2C Test Shop quickly.
 
 ### Prerequisites
 
@@ -27,11 +25,11 @@ Recommended system requirements for MacOS:
 |15'|	4	|6GB|
 |13'|	2	|4GB|
 
-### Installing the B2C Demo Shop
+### Installing the B2C Test Shop
 
-To install the B2C Demo Shop:
+To install the B2C Test Shop:
 
-1. Create a project folder and clone the B2C Demo Shop and the Docker SDK:
+1. Create a project folder and clone the B2C Test Shop and the Docker SDK:
 ```bash
 mkdir spryker-b2c && cd spryker-b2c
 git clone https://github.com/spryker-shop/b2c-demo-shop.git ./
@@ -72,7 +70,7 @@ docker/sdk up --build --assets --data
 > - `--assets` - build assets
 > - `--data` - get new demo data
 
-You've set up your Spryker B2C Demo Shop and can access your applications.
+You've set up Spryker B2C Test Shop and can access it.
 
 
 ### Setting up a production-like environment
@@ -168,11 +166,6 @@ docker/sdk up --build --assets --data
 ## Installation of B2C Demo Shop with Docker
 
 For detailed installation instructions of Spryker with Docker, see [Installing Spryker with Docker](https://docs.spryker.com/docs/installing-spryker-with-docker).
-
-
-## Installation of B2C Demo Shop with Vagrant
-For detailed installation instructions of Spryker with Vagrant, see [Installing with Development Virtual Machine](https://docs.spryker.com/docs/dev-getting-started#installing-spryker-with-development-virtual-machine).
-
 
 
 ## Glue API reference
