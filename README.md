@@ -1,5 +1,4 @@
 # B2C Test Shop (Spryker Commerce OS)
-[![Build Status](https://github.com/spryker-shop/b2c-demo-shop/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/spryker-shop/b2c-demo-shop/actions?query=branch:master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spryker-shop/b2c-demo-shop/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spryker-shop/b2c-demo-shop/?branch=master)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
 
@@ -32,8 +31,8 @@ To install the B2C Test Shop:
 1. Create a project folder and clone the B2C Test Shop and the Docker SDK:
 ```bash
 mkdir spryker-b2c && cd spryker-b2c
-git clone https://github.com/spryker-shop/b2c-demo-shop.git ./
-git clone git@github.com:spryker/docker-sdk.git docker
+git clone https://github.com/TheRaymondPlex/Spryker-Test-Shop-B2C ./
+git clone https://github.com/spryker/docker-sdk.git --single-branch docker
 ```
 
 2. Set up a desired environment:
@@ -47,7 +46,7 @@ To set up a development environment:
 1. Bootstrap the docker setup:
 
 ```bash
-docker/sdk boot deploy.dev.yml
+docker/sdk bootstrap deploy.dev.yml
 ```
 
 2. If the command you've run in the previous step returned instructions, follow them.
@@ -61,7 +60,7 @@ docker/sdk up
 
 ```bash
 git checkout {your_branch}
-docker/sdk boot -s deploy.dev.yml
+docker/sdk bootstrap -s deploy.dev.yml
 docker/sdk up --build --assets --data
 ```
 
@@ -80,7 +79,7 @@ To set up a production-like environment:
 1. Bootstrap the docker setup:
 
 ```bash
-docker/sdk boot -s
+docker/sdk bootstrap -s
 ```
 
 2. If the command you've run in the previous step returned instructions, follow them.
@@ -96,7 +95,7 @@ docker/sdk up
 
   ```bash
   git checkout {your_branch}
-  docker/sdk boot -s
+  docker/sdk bootstrap -s
   docker/sdk up --assets --data
   ```
 
@@ -104,8 +103,7 @@ docker/sdk up
 
   ```bash
   git checkout {your_branch}
-  docker/sdk boot -s
-
+  docker/sdk bootstrap -s
   docker/sdk up
   ```
 
@@ -145,7 +143,7 @@ git status
 3. Restart file synchronization and rebuild the codebase:
 ```bash
 docker/sdk trouble
-docker/sdk boot -s deploy.dev.yml
+docker/sdk bootstrap -s deploy.dev.yml
 docker/sdk up --build --assets
 ```
 
@@ -159,7 +157,7 @@ You do not see the expected demo data on the Storefront.
 2. If the queues are empty, and the issue persists, reload the demo data:
 ```bash
 docker/sdk trouble
-docker/sdk boot -s deploy.dev.yml
+docker/sdk bootstrap -s deploy.dev.yml
 docker/sdk up --build --assets --data
 ```
 

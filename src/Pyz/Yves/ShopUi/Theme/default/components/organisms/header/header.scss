@@ -19,9 +19,9 @@
         }
 
         &__top {
-            background: $setting-color-black;
+            background: $setting-color-gray-4;
             color: $setting-color-gray-3;
-            margin-bottom: rem(15);
+            margin-bottom: rem(18);
             display: none;
 
             @include helper-breakpoint-media-min($lg-min) {
@@ -49,6 +49,7 @@
         &__navigation-top {
             position: relative;
             z-index: $setting-zi-header + 3;
+            border-bottom: solid $setting-color-black 8px;
         }
 
         &__search-form {
@@ -118,7 +119,7 @@
             &::before {
                 content: '';
                 display: block;
-                width: rem(85);
+                width: rem(0);
                 height: rem(25);
                 float: left;
                 border-bottom: rem(1) solid $setting-color-gray-4;

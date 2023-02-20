@@ -22,9 +22,9 @@
         "yves:tslint:fix": "node ./frontend/libs/tslint --fix",
         "formatter": "node ./frontend/libs/formatter",
         "formatter:fix": "node ./frontend/libs/formatter --fix",
-        "zed": "node ./node_modules/@spryker/oryx-for-zed/build",
-        "zed:watch": "node ./node_modules/@spryker/oryx-for-zed/build --dev",
-        "zed:production": "node ./node_modules/@spryker/oryx-for-zed/build --prod"
+        "zed": "node ./frontend/zed/build",
+        "zed:watch": "node ./frontend/zed/build --dev",
+        "zed:production": "node ./frontend/zed/build --prod"
     },
     "engines": {
         "node": ">=16.0.0",

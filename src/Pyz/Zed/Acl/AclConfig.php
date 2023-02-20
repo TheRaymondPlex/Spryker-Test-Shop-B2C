@@ -18,10 +18,10 @@ class AclConfig extends SprykerAclConfig
     public function getInstallerUsers()
     {
         return [
-            'admin@spryker.com' => [
+            'admin@kingsman.com' => [
                 'group' => AclConstants::ROOT_GROUP,
             ],
-            'admin_de@spryker.com' => [
+            'admin_de@kingsman.com' => [
                 'group' => AclConstants::ROOT_GROUP,
             ],
             //this is related to existent username and will be searched into the database

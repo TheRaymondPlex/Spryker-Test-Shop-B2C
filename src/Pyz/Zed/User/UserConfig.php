@@ -18,19 +18,12 @@ class UserConfig extends SprykerUserConfig
     {
         return [
             [
-                'firstName' => 'Admin',
-                'lastName' => 'Spryker',
-                'username' => 'admin@spryker.com',
-                'password' => 'change123',
+                'firstName' => 'Admin (EN)',
+                'lastName' => 'Kingsman',
+                'username' => 'admin@kingsman.com',
+                'password' => 'adminkingsman',
                 'localeName' => 'en_US',
-            ],
-            [
-                'firstName' => 'Admin',
-                'lastName' => 'German',
-                'password' => 'change123',
-                'username' => 'admin_de@spryker.com',
-                'localeName' => 'de_DE',
-            ],
+            ]
         ];
     }
 }

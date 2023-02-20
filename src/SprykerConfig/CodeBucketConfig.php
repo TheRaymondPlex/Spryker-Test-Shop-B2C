@@ -18,8 +18,6 @@ class CodeBucketConfig extends AbstractCodeBucketConfig
     {
         return [
             'DE',
-            'AT',
-            'US',
         ];
     }
 
