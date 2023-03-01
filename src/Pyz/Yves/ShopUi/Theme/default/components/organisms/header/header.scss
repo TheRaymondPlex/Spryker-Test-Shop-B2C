@@ -101,7 +101,7 @@
 
         &__search-overlay-container {
             @include helper-effect-transition(all);
-            padding: rem(34) rem(30);
+            padding: rem(15) rem(15);
             background: $setting-color-white;
             min-width: 100vw;
             transform-origin: top center;
@@ -109,7 +109,7 @@
             opacity: 0;
 
             @include helper-breakpoint-media-min($md-min) {
-                min-width: rem(480);
+                min-width: rem(400);
             }
         }
 
@@ -134,12 +134,12 @@
         &__search-close {
             z-index: $setting-zi-search-suggestions + 2;
             cursor: pointer;
-            margin-bottom: rem(25);
+            margin-bottom: rem(0);
             width: rem(20);
             padding: 0;
 
             @include helper-breakpoint-media-min($md-min) {
-                padding: rem(34) rem(30);
+                padding: rem(15) rem(15);
                 position: absolute;
                 right: 0;
                 top: 0;

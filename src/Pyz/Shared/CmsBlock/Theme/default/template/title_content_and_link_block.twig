@@ -6,15 +6,19 @@
     {% set link = spyCmsBlockPlaceholder('link') %}
 
     <div class="container">
-        <div class="product-slider-title">
-            <h1 class="title title--h2 title--regular">{{ spyCmsBlockPlaceholder('title') | raw }}</h1>
-            {% if link %}
-                <div class="product-slider-title__sub-col is-hidden-sm-md">{{ link | raw }}</div>
-            {% endif %}
-        </div>
+        <div class="grid grid--justify grid--spaced-lg grid--middle">
+            <div class="" style="text-align: center; width: 30%">
+{#                <h1 class="title title--h2 title--regular">{{ spyCmsBlockPlaceholder('title') | raw }}</h1>#}
+                <h1 class="title title--h2 title--regular">Some title</h1>
+                <h2 class="title title--h5 title--regular">Some additional information can be placed here. For now you see simple text just for filling empty space.</h2>
+                <h3 class="title title--h1 title--regular" style="font-size: 100px">380</h3>
+                {% if link %}
+                    <br>
+                    {{ link | raw }}
+                {% endif %}
+            </div>
 
-        <div class="grid">
-            <div class="col col--sm-12">
+            <div class="grid grid--right" style="width: 65%">
                 {{ spyCmsBlockPlaceholder('content') | raw }}
             </div>
         </div>

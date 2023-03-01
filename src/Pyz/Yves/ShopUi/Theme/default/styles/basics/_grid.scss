@@ -4,6 +4,7 @@
         width: 100%;
         max-width: $setting-grid-max-width;
         margin: auto;
+        border-bottom: gray solid 1px;
 
         &--home-page {
             max-width: none;

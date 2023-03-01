@@ -23,7 +23,7 @@ class UserConfig extends SprykerUserConfig
                 'username' => 'admin@kingsman.com',
                 'password' => 'adminkingsman',
                 'localeName' => 'en_US',
-            ]
+            ],
         ];
     }
 }

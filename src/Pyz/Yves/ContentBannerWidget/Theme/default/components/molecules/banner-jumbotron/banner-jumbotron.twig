@@ -18,8 +18,10 @@
             <a href="{{ data.banner.clickUrl }}" class="{{ config.name }}__link"></a>
         {% endif %}
         <div class="col col--sm-12 spacing-y spacing-y--inner spacing-y--big">
-            <h1 class="{{ config.name }}__title">{{ data.banner.title | raw }}</h1>
-            <p class="{{ config.name }}__text">{{ data.banner.subtitle | raw }}</p>
+            <div class="{{ config.name }}__single-text-block">
+                <h1 class="{{ config.name }}__title">{{ data.banner.title | raw }}</h1>
+                <p class="{{ config.name }}__text">{{ data.banner.subtitle | raw }}</p>
+            </div>
         </div>
     </div>
 {% endblock %}

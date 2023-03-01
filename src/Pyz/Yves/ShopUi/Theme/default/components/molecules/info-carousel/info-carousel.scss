@@ -1,0 +1,50 @@
+@mixin shop-ui-info-carousel($name: '.info-carousel') {
+    :root {
+        --s: 3;
+        --h: 30;
+        --speed: 7s;
+    }
+
+    #{$name} {
+        height: calc(var(--h) * 1px);
+        font-size: rem(12);
+        font-weight: fw(medium);
+        letter-spacing: rem(2.1);
+        line-height: rem(30);
+        //text-transform: uppercase;
+        color: $setting-color-gray-3;
+        padding: 0 rem(16);
+        overflow: hidden;
+
+        &__table {
+            animation: move calc(var(--speed) * var(--s)) steps(var(--s)) infinite;
+        }
+
+        &__item {
+            list-style: none;
+            animation: liMove calc(var(--speed)) infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, calc(var(--s) * var(--h) * -1px));
+            }
+        }
+
+        @keyframes liMove {
+            0% {
+                transform: translate(0, 0);
+            }
+            15%,
+            100%  {
+                transform: translate(0, calc(var(--h) * -1px));
+            }
+        }
+
+        @content;
+    }
+}
+
+@include shop-ui-info-carousel();

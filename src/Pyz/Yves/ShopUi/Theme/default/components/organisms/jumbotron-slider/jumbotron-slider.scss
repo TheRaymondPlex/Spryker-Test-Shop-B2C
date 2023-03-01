@@ -7,7 +7,7 @@
         }
 
         @include helper-breakpoint-media-min($lg-min) {
-            min-height: rem(450);
+            min-height: rem(200);
         }
 
         .slick-slide {
