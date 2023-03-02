@@ -3,6 +3,18 @@
         flex-shrink: 0;
     }
 
+    &--thumbnail {
+        position: static;
+        height: 10rem;
+        margin: 0.5rem;
+    }
+
+    &--thumbnail-search {
+        position: relative;
+        height: 10rem;
+        margin: 0.5rem;
+    }
+
     &--full-height {
         height: 100%;
     }
